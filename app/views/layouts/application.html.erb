@@ -26,12 +26,19 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <style>
-    /* Main font families: Raleway/Titillium Web */
+    /* Main font families: Raleway (titles/headers)/Titillium Web (body)*/
     @import url(https://fonts.googleapis.com/css?family=Raleway|Titillium+Web);
     </style>
+    <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
   </head>
 
   <body>
+    <!-- Main Header Text -->
+    <div class="header" id="header">
+        Curator
+    </div>
+
+    <!-- JS Login/Sign Up Slider -->
     <%= yield %>
   </body>
 </html>
